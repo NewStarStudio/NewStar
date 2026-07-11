@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    background-image: url("img/Fundo do site.png");
+    background-repeat: repeat-y;
+    background-position: top center;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* MENU */
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Permite quebrar linha */
+    gap: 80px;
+    padding: 20px;
+}
+
+.botoes {
+    text-decoration: none;
+    color: #ffed00;
+    font-size: 1.1rem;
+    transition: .3s;
+}
+
+.botoes:hover {
+    color: black;
+}
+
+/* LOGO */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.logo {
+    width: 35%;
+    max-width: 450px;
+    min-width: 180px;
+    height: auto;
+    margin-top: 3%;
+}
+
+/* SLOGAN */
+.slogan {
+    text-align: center;
+    color: #ebbc73;
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-top: 2%;
+}
+
+.saibamenu{
+    display: flex;
+    justify-content: center;
+}
+
+.saibamais{
+    text-decoration: none;
+    margin-top: 5%;
+    color: #ffed00;
+    font-size: 120%;
+    border: solid #ffed00 2px;
+    padding: 20px;
+    border-radius: 7px;
+    transition: 0.2s;
+}
+
+.saibamais:hover{
+background-color: #ffed00;
+color: #1f1843;
+}
+
+
+.infpro{
+    margin-top: 30%;
+
+    background-color: rgb(27, 41, 96);
+    display: flex;
+}
+
+.infpro_text1{
+    color: #ffed00;
+    font-size: 130%;
+    margin-left: 2%;
+}
+
+
+
+
+
+
+
+/* TABLETS */
+@media (max-width: 768px) {
+
+    .menu {
+        gap: 25px;
+    }
+
+    .botoes {
+        font-size: 1rem;
+    }
+
+    .logo {
+        width: 60%;
+    }
+
+    .slogan {
+        font-size: 1rem;
+    }
+}
+
+/* CELULARES */
+@media (max-width: 480px) {
+
+    .menu {
+        flex-direction: column; /* Menu em coluna */
+        gap: 8px;
+        padding: 15px;
+    }
+
+    .botoes {
+        font-size: 1rem;
+        padding: 5px;
+    }
+
+    .logo {
+        width: 80%;
+        max-width: 250px;
+    }
+
+    .slogan {
+        font-size: 0.95rem;
+        padding: 0 15px;
+    }
+}
