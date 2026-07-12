@@ -7,7 +7,67 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* MENU */
+/* Fundo espacial */
+
+.space-bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    pointer-events: none;
+
+    background:
+        radial-gradient(circle at 20% 30%, rgba(83,60,255,.25), transparent 35%),
+        radial-gradient(circle at 80% 70%, rgba(0,195,255,.15), transparent 40%);
+}
+
+
+.stars{
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    background-image:
+        radial-gradient(white 1px, transparent 1px),
+        radial-gradient(#ffed00 1px, transparent 1px),
+        radial-gradient(#8ec5ff 1px, transparent 1px);
+
+    background-size:
+        170px 170px,
+        250px 250px,
+        320px 320px;
+
+    background-position:
+        0 0,
+        90px 120px,
+        200px 40px;
+
+    animation: piscar 5s infinite alternate;
+
+}
+
+
+/* Piscar estrelas */
+
+@keyframes piscar{
+
+    from{
+        opacity: .5;
+    }
+
+    to{
+        opacity: 1;
+    }
+
+}
+
+
+
+
 .menu {
     display: flex;
     justify-content: center;
@@ -15,6 +75,7 @@ body {
     flex-wrap: wrap; /* Permite quebrar linha */
     gap: 80px;
     padding: 20px;
+    margin-top: 4%;
 }
 
 .botoes {
@@ -28,7 +89,7 @@ body {
     color: black;
 }
 
-/* LOGO */
+
 .logo-container {
     display: flex;
     justify-content: center;
@@ -43,7 +104,7 @@ body {
     margin-top: 3%;
 }
 
-/* SLOGAN */
+
 .slogan {
     text-align: center;
     color: #ebbc73;
@@ -57,6 +118,7 @@ body {
 .saibamenu{
     display: flex;
     justify-content: center;
+     
 }
 
 .saibamais{
@@ -77,18 +139,48 @@ color: #1f1843;
 
 
 .infpro{
-    margin-top: 30%;
-
+    margin-top: 20%;
     background-color: rgb(27, 41, 96);
+    padding: 80px 40px;
+}
+
+.infopro2{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.infopro3{
+    max-width: 600px;
 }
 
 .infpro_text1{
     color: #ffed00;
-    font-size: 130%;
-    margin-left: 2%;
+    font-size: 3rem;
+    margin-bottom: 20px;
 }
 
+.infpro_text2{
+    color: #ebbc73;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.destaque{
+    color: #ffed00;
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.infopro_img{
+    width: 30%;
+    max-width: 350px;
+    border-radius: 10px;
+}
 
 
 
@@ -113,13 +205,29 @@ color: #1f1843;
     .slogan {
         font-size: 1rem;
     }
+
+    .saibamais{
+        margin-top: 9%;
+        padding: 15px;
+    }
+
+  .infopro2{
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    }
+
+    .infopro_img{
+        width: 60%;
+    }
+
 }
 
 /* CELULARES */
 @media (max-width: 480px) {
 
     .menu {
-        flex-direction: row; /* Menu em coluna */
+        flex-direction: row; 
         gap: 8px;
         padding: 15px;
     }
@@ -138,4 +246,33 @@ color: #1f1843;
         font-size: 0.95rem;
         padding: 0 15px;
     }
+
+     .saibamais{
+        margin-top: 9%;
+        padding: 12px;
+    }
+
+    .infpro{
+        padding: 50px 20px;
+    }
+
+    .infpro_text1{
+        font-size: 2.2rem;
+    }
+
+    .infpro_text2{
+        font-size: 1rem;
+    }
+
+    .destaque{
+        font-size: 1.3rem;
+    }
+
+    .infopro_img{
+        width: 80%;
+    }
+   
+
 }
+
+
