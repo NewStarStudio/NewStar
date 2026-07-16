@@ -198,6 +198,12 @@ box-shadow: 50px 10px 30px #000000
     width: 30%;
     max-width: 350px;
     border-radius: 10px;
+    transition: 0.2s;
+}
+
+.infopro_img:hover{
+    width: 50%;
+    max-width: 380px;
 }
 
 .flawed1{
@@ -251,8 +257,13 @@ background: linear-gradient(90deg, rgba(63, 144, 176, 1) 0%, rgba(59, 51, 220, 1
     width: 70%;
     max-width: 450px;
     border-radius: 10px;
+    transition: 0.2s;
 }
 
+.flawed_img:hover{
+        width: 80%;
+        max-width: 480px;
+    }
 
 
 
@@ -287,7 +298,7 @@ background: linear-gradient(90deg, rgba(63, 144, 176, 1) 0%, rgba(59, 51, 220, 1
     }
 
     .infopro_img{
-        width: 60%;
+        width: 40%;
     }
 
      .flawed2{
@@ -299,6 +310,9 @@ background: linear-gradient(90deg, rgba(63, 144, 176, 1) 0%, rgba(59, 51, 220, 1
     .flawed_img{
         width: 60%;
     }
+
+    
+
 
 }
 
