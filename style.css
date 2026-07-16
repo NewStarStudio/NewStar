@@ -1,10 +1,18 @@
+@font-face {
+    font-family: Nexa-Heavy;
+
+    src: url(fonte/Nexa-Heavy.ttf) format('truetype');
+}
+
+
 body {
     margin: 0;
     background-image: url("img/Fundo do site.png");
     background-repeat: repeat-y;
     background-position: top center;
     background-size: cover;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Nexa-Heavy, sans-serif;
+    
 }
 
 /* Fundo espacial */
@@ -76,13 +84,14 @@ body {
     gap: 80px;
     padding: 20px;
     margin-top: 4%;
+    transition: 0.2s;
 }
 
 .botoes {
     text-decoration: none;
     color: #ffed00;
     font-size: 1.1rem;
-    transition: .3s;
+    transition: 0.2s;
 }
 
 .botoes:hover {
@@ -138,10 +147,18 @@ color: #1f1843;
 }
 
 
+
+
+
 .infpro{
     margin-top: 20%;
     background-color: rgb(27, 41, 96);
     padding: 80px 40px;
+    padding-bottom: 200px;
+    padding-top: 200px;
+
+box-shadow: 50px 10px 30px #000000
+
 }
 
 .infopro2{
@@ -159,12 +176,13 @@ color: #1f1843;
 
 .infpro_text1{
     color: #ffed00;
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 20px;
+    text-shadow: 1px 3px 2px black;
 }
 
 .infpro_text2{
-    color: #ebbc73;
+    color: #ffffff;
     font-size: 1.2rem;
     line-height: 1.6;
 }
@@ -182,7 +200,58 @@ color: #1f1843;
     border-radius: 10px;
 }
 
+.flawed1{
+    background: #3f90b0;
+background: linear-gradient(90deg, rgba(63, 144, 176, 1) 0%, rgba(59, 51, 220, 1) 100%);
+    padding: 80px 40px;
+}
 
+.flawed2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.flawed3{
+    max-width: 600px;
+}
+
+.flawed_text1{
+    color: rgb(207, 163, 234);
+    font-size: 4rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+}
+
+.flawed_text2{
+    color: #ffffff;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.flawed_destaque2{
+    color: #ffed00;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.flawed_destaque{
+    color: #1e12cc;
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.flawed_img{
+    width: 70%;
+    max-width: 450px;
+    border-radius: 10px;
+}
 
 
 
@@ -218,6 +287,16 @@ color: #1f1843;
     }
 
     .infopro_img{
+        width: 60%;
+    }
+
+     .flawed2{
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    }
+
+    .flawed_img{
         width: 60%;
     }
 
@@ -272,6 +351,32 @@ color: #1f1843;
         width: 80%;
     }
    
+    .flawed{
+        padding: 50px 20px;
+    }
+
+    .flawed_text1{
+        font-size: 2.2rem;
+    }
+
+    .flawed_text2{
+        font-size: 1rem;
+    }
+
+    .flawed_destaque{
+        font-size: 1.3rem;
+    }
+    .flawed_destaque2{
+        font-size: 1.3rem;
+    }
+
+
+    .flawed_img{
+        width: 80%;
+    }
+   
+
+
 
 }
 
